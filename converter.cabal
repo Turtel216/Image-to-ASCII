@@ -1,4 +1,4 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
 -- This file has been generated from package.yaml by hpack version 0.37.0.
 --
@@ -6,18 +6,17 @@ cabal-version: 2.2
 
 name:           converter
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/converter#readme>
+description:    Please see the README on GitHub at <https://github.com/Turtel216/Image-to-ASCII/blob/main/README.md>
 homepage:       https://github.com/githubuser/converter#readme
 bug-reports:    https://github.com/githubuser/converter/issues
 author:         Dimitrios Papakonstantinou
 maintainer:     papakonstantinou.dm@gmail.com
 copyright:      2024 Author Dimitrios Papakonstantinou
-license:        BSD-3-Clause
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    CHANGELOG.md
 
 source-repository head
   type: git
@@ -26,10 +25,9 @@ source-repository head
 library
   exposed-modules:
       AsciiConverter.Const
+      AsciiConverter.Lib
       Lib
   other-modules:
-      Paths_converter
-  autogen-modules:
       Paths_converter
   hs-source-dirs:
       src
@@ -43,8 +41,6 @@ library
 executable converter-exe
   main-is: Main.hs
   other-modules:
-      Paths_converter
-  autogen-modules:
       Paths_converter
   hs-source-dirs:
       app
@@ -60,8 +56,6 @@ test-suite converter-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_converter
-  autogen-modules:
       Paths_converter
   hs-source-dirs:
       test
