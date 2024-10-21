@@ -65,7 +65,7 @@ executable img2ascii
 
     -- Other library packages from which modules are imported.
     build-depends:    
-      base ^>=4.17.2.1, vector ^>=0.13.0.0, hip ^>=1.5.5.0
+      vector ^>=0.13.0.0, hip ^>=1.5.5.0, base ^>=4.17.2.1
 
     -- Directories containing source files.
     hs-source-dirs:   app
